@@ -19,6 +19,10 @@ conda update -n base conda
 ``` bash
 conda activate alphafold
 ```
+My version: 
+```bash
+conda activate /ocean/projects/cis230061p/fyuan/capstone/alphafold_non_docker/miniconda3/envs/alphafold2
+```
 
 ### **Install dependencies**
 

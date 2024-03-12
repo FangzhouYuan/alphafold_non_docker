@@ -143,6 +143,7 @@ alphafold
 bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
 
 # For reduced database
+cd alphafold-2.3.1
 bash run_alphafold.sh -d ../alphafold_data/ -o ../dummy_test/ -f ../example/query.fasta -t 2020-05-14 -c 'reduced_dbs'
 
 # OR for CPU only run

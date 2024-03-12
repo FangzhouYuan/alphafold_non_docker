@@ -21,7 +21,7 @@ conda activate alphafold
 ```
 My version: 
 ```bash
-conda activate /ocean/projects/cis230061p/fyuan/capstone/alphafold_non_docker/miniconda3/envs/alphafold2
+conda activate /ocean/projects/cis230061p/fyuan/.conda/envs/alphafold
 ```
 
 ### **Install dependencies**
@@ -141,6 +141,9 @@ alphafold
 ```
 # Example run (Uses the GPU with index id 0 as default)
 bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
+
+# For reduced database
+bash run_alphafold.sh -d ../alphafold_data/ -o ../dummy_test/ -f ../example/query.fasta -t 2020-05-14 -c 'reduced_dbs'
 
 # OR for CPU only run
 bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14 -g False
